@@ -18,15 +18,7 @@ function Snake() {
       return false;
     }
   }
-  this.eatPowerUp = function(pos) {
-    var d = dist(this.x, this.y, pos.x, pos.y);
-    if (d < 1) {
-      powerUpAvaible=false;
-      return true;
-    } else {
-      return false;
-    }
-  }
+  
 //changes direction of snake
   this.dir = function(x, y) {
     this.xspeed = x;
